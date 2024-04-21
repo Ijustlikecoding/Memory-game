@@ -1,0 +1,36 @@
+.card{
+    position: relative;
+    margin: 0%;
+}
+
+.card img{
+    width: 50%;
+    height: 90%;
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 6px;
+}
+
+/* front of card*/
+
+.card .opened{
+    transform: rotateY(90deg);
+    transition: all ease-in 0.2s;
+    position: absolute;
+}
+
+.flipped .opened{
+    transform: rotateY(0deg);
+    transition-delay: 0.2s;
+}
+
+/* back of card */
+.card .closed{
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+}
+
+.flipped .closed{
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+}
